@@ -30,9 +30,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * - EISU   = IME OFF (GUI + Shift + ;) // iTerm2: Require the same setting as KANA
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * | Esc    |   1  |   2  |   3  |   4  |   5  |  6   |           |  6   |   7  |   8  |   9  |   0  |   -  | BackSp |
+ * | Esc    |   1  |   2  |   3  |   4  |   5  |  6   |           |  7   |   8  |   9  |   0  |   -  |   ~  |   |    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | Tab    |   Q  |   W  |   E  |   R  |   T  |  L1  |           | L2   |   Y  |   U  |   I  |   O  |   P  |   \    |
+ * | Tab    |   Q  |   W  |   E  |   R  |   T  |  L1  |           | L2   |   Y  |   U  |   I  |   O  |   P  |   @    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | Cmd    |A / L2|   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |; / L2|' / Cmd |
  * |--------+------+------+------+------+------| EISU |           | KANA |------+------+------+------+------+--------|
@@ -61,11 +61,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                               KC_TRNS,
                                               KC_SPC,KC_BSPC, KC_LSFT,
         // right hand
-             KC_6,        KC_7,   KC_8,   KC_9,   KC_0,   KC_MINS,          KC_BSPC,
-             TG(MDIA),    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_BSLS,
+             KC_7,        KC_8,   KC_9,   KC_0,   KC_MINS,KC_EQL,           KC_JYEN,
+             TG(MDIA),    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_RBRC,
                           KC_H,   KC_J,   KC_K,   KC_L,   LT(MDIA, KC_SCLN),GUI_T(KC_QUOT),
              KC_LANG1,    KC_N,   KC_M,   KC_COMM,KC_DOT, LT(SYMB, KC_SLSH),KC_RSFT,
-                                  KC_LBRC,KC_RBRC,KC_RCTRL,KC_LALT,       KC_TRNS,
+                                  KC_RBRC,KC_BSLS,KC_RCTRL,KC_LALT,       KC_TRNS,
+                                  // KC_LBRC -> @, KC_RBRC -> [, KC_BSLS -> ]
              KC_LALT,     KC_ESC,
              KC_PGUP,
              KC_PGDN, KC_BSPC, KC_ENT
