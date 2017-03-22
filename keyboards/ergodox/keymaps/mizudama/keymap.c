@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| EISU |           | KANA |------+------+------+------+------+--------|
  * | Shift  |Z / L1|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |/ / L1|  Shift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |Grv   | LAlt |LCtrl |AltShf|      |                                       |   [  |   ]  | RCTRL|  RALT|      |
+ *   |Grv   | LAlt |LCtrl |AltShf|      |                                       |   [  |   ]  |   _  |   _  |      |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | App  |IMETGL|       | Alt  | Esc  |
@@ -62,12 +62,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                               KC_SPC,KC_BSPC, KC_LSFT,
         // right hand
              KC_7,        KC_8,   KC_9,   KC_0,   KC_MINS,KC_EQL,           KC_JYEN,
-             TG(MDIA),    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_RBRC,
+             TG(MDIA),    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_LBRC,
                           KC_H,   KC_J,   KC_K,   KC_L,   LT(MDIA, KC_SCLN),GUI_T(KC_QUOT),
              KC_LANG1,    KC_N,   KC_M,   KC_COMM,KC_DOT, LT(SYMB, KC_SLSH),KC_RSFT,
-                                  KC_RBRC,KC_BSLS,KC_RCTRL,KC_LALT,       KC_TRNS,
+                                  KC_RBRC,KC_BSLS,KC_RO,  KC_RO,       KC_TRNS,
                                   // KC_LBRC -> @, KC_RBRC -> [, KC_BSLS -> ]
-             KC_LALT,     KC_ESC,
+             KC_DEL,     KC_ESC,
              KC_PGUP,
              KC_PGDN, KC_BSPC, KC_ENT
     ),
